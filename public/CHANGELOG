@@ -6,8 +6,6 @@ Version Number-α.25.1220.1
 ### 版本说明 / Version Note:
 - 本次更新为大版本更新
   This update is a major version release
-- 版本号格式变更：在状态标识后添加了主版本号
-  Version number format change: Added major version number after status identifier
 
 ### 修复内容 / Fixes:
 - 修复中文列表页面标题栏品牌链接跳转问题
@@ -64,7 +62,7 @@ Version Number-α.25.1220.1
 ### 技术细节 / Technical Details:
 - 版本号遵循 α.25.1220.1 格式：
   Version number follows γ1.25.1220.1 format:
-  - α: 测试版本 / Stable release version
+  - α: 测试版本 / Alpha release version
   - 25: 年份 (2025) / Year (2025)
   - 1220: 日期 (12月20日) / Date (December 20th)
   - 1: 当天的版数 / Version number of the day
