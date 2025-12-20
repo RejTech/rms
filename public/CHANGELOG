@@ -1,15 +1,13 @@
 日期2025.12.20
 Version 2025.12.20
-版本号-γ1.25.1220.1
-Version Number-γ1.25.1220.1
+版本号-α.25.1220.1
+Version Number-α.25.1220.1
 
 ### 版本说明 / Version Note:
 - 本次更新为大版本更新
   This update is a major version release
 - 版本号格式变更：在状态标识后添加了主版本号
   Version number format change: Added major version number after status identifier
-  - γ → γ1 表示第一个正式大版本
-    γ → γ1 indicates the first major stable version
 
 ### 修复内容 / Fixes:
 - 修复中文列表页面标题栏品牌链接跳转问题
@@ -64,10 +62,9 @@ Version Number-γ1.25.1220.1
     Updated version number in footer of English homepage (en/index.html)
 
 ### 技术细节 / Technical Details:
-- 版本号遵循 γ1.25.1220.1 格式：
+- 版本号遵循 α.25.1220.1 格式：
   Version number follows γ1.25.1220.1 format:
-  - γ: 正式版本 / Stable release version
-  - 1: 主版本号 (大版本更新) / Major version number (major update)
+  - α: 测试版本 / Stable release version
   - 25: 年份 (2025) / Year (2025)
   - 1220: 日期 (12月20日) / Date (December 20th)
   - 1: 当天的版数 / Version number of the day
