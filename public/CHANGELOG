@@ -1,0 +1,82 @@
+日期2025.12.20
+Version 2025.12.20
+版本号-γ1.25.1220.1
+Version Number-γ1.25.1220.1
+
+### 版本说明 / Version Note:
+- 本次更新为大版本更新
+  This update is a major version release
+- 版本号格式变更：在状态标识后添加了主版本号
+  Version number format change: Added major version number after status identifier
+  - γ → γ1 表示第一个正式大版本
+    γ → γ1 indicates the first major stable version
+
+### 修复内容 / Fixes:
+- 修复中文列表页面标题栏品牌链接跳转问题
+  Fixed brand link navigation issue in Chinese list pages' title bar
+  - 更新了以下页面的品牌链接：
+    Updated brand links in the following pages:
+    - public/news/list.html
+    - public/news/list-tlz.html
+    - public/news/list-360reality.html
+    - public/news/list-ssdjy.html
+  - 将错误的相对路径 href="index.html" 修正为 href="../index.html"
+    Corrected incorrect relative path href="index.html" to href="../index.html"
+
+### 新功能 / New Features:
+- 为列表页面添加动画效果
+  Added animation effects to list pages
+  - 添加了 fadeIn 和模糊效果的组合动画
+    Added combined fadeIn and blur animations
+  - 为导航栏项目添加了序列动画
+    Added sequential animations to navbar items
+  - 为列表项添加了延迟加载动画
+    Added staggered loading animations to list items
+  - 为返回按钮添加了动画效果
+    Added animations to back buttons
+  - 影响页面：所有列表页面 (list*.html)
+    Affected pages: All list pages (list*.html)
+
+### 界面更新 / UI Updates:
+- 为列表页面添加语言切换按钮
+  Added language switch buttons to list pages
+  - 在以下页面添加了语言切换功能：
+    Added language switch functionality to:
+    - public/news/list.html
+    - public/news/list-tlz.html
+    - public/news/list-360reality.html
+    - public/news/list-ssdjy.html
+    - public/en/news/list.html
+    - public/en/news/list-tlz.html
+    - public/en/news/list-360reality.html
+    - public/en/news/list-ssdjy.html
+
+### 更新内容 / Updates:
+- 更新网站版本号信息
+  Updated website version information
+  - 更新了中文关于页面 (about.html) 中的版本号和发布日期
+    Updated version number and release date in Chinese about page (about.html)
+  - 更新了英文关于页面 (en/about.html) 中的版本号和发布日期
+    Updated version number and release date in English about page (en/about.html)
+  - 更新了中文首页 (index.html) 底部的版本号
+    Updated version number in footer of Chinese homepage (index.html)
+  - 更新了英文首页 (en/index.html) 底部的版本号
+    Updated version number in footer of English homepage (en/index.html)
+
+### 技术细节 / Technical Details:
+- 版本号遵循 γ1.25.1220.1 格式：
+  Version number follows γ1.25.1220.1 format:
+  - γ: 正式版本 / Stable release version
+  - 1: 主版本号 (大版本更新) / Major version number (major update)
+  - 25: 年份 (2025) / Year (2025)
+  - 1220: 日期 (12月20日) / Date (December 20th)
+  - 1: 当天的版数 / Version number of the day
+
+日期2025.05.22
+Version 2025.05.22
+版本号-r.250522.1
+Version Number-r.250522.1
+
+### 更新内容 / Updates:
+- 网站托管服务商更改
+  Changed website hosting provider
