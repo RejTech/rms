@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <title>RMS-锐机视频</title>
@@ -23,7 +23,7 @@
                 filter: blur(0);
             }
         }
-        /* 瀵艰埅鏍忛」鐩姩鐢?*/
+        /* 导航链接动画 */
         .nav-item {
             opacity: 0;
             animation: fadeInUp 0.5s ease forwards;
@@ -33,7 +33,7 @@
         .nav-item:nth-child(3) { animation-delay: 0.3s; }
         .nav-item:nth-child(4) { animation-delay: 0.4s; }
         .nav-item:nth-child(5) { animation-delay: 0.5s; }
-        /* 返回鎸夐挳鍔ㄧ敾 */
+        /* 返回按钮动画 */
         .nav-link.active {
             opacity: 0;
             animation: fadeInUp 0.5s ease forwards;
@@ -43,13 +43,13 @@
 </head>
 <body>
 <nav class="navbar bg-body-tertiary px-3 mb-3 sticky-top">
-    <a class="navbar-brand" href="#">【塞尔达王国之泪】时之殿-获取四地区任务/a>
+    <a class="navbar-brand" href="#">【塞尔达王国之泪】时之殿-获取四地区任务</a>
     <ul class="nav nav-pills">
         <li class="nav-item">
             <a class="nav-link active" href="list-tlz.html">返回</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading1">视频简介/a>
+            <a class="nav-link" href="#scrollspyHeading1">视频简介</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#scrollspyHeading2">视频播放</a>
@@ -71,12 +71,12 @@
 </div>
 <div class="scrollspy-example bg-body-tertiary p-3 rounded-2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
      data-bs-spy="scroll" data-bs-target="#navbar-example2" tabindex="0">
-    <h4 id="scrollspyHeading1">视频标题：【塞尔达王国之泪】时之殿-获取四地区任务/h4>
+    <h4 id="scrollspyHeading1">视频标题：【塞尔达王国之泪】时之殿-获取四地区任务</h4>
     <p>未经作者允许，请勿转载</p>
     <h4 id="scrollspyHeading2">视频播放</h4>
     <iframe src="https://player.bilibili.com/player.html?bvid=BV18M1eYvEfY&page=1" height="450" width=100% scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
     <h4 id="scrollspyHeading3">相关链接</h4>
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">鏄剧ず</button>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">显示</button>
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasScrollingLabel">显示链接</h5>
@@ -92,12 +92,11 @@
     </div>
 </div>
 
-
-</body>
 <footer>
     <a>版本号-α.25.1220.1<br>Github项目</a>
     <a href="https://github.com/RejTech/rejmainsite"><br>前往Github源码区</a><br>
-    <a href="LICENSE">Apache2.0许可证
+    <a href="../LICENSE">Apache2.0许可证
         ——版权所有 锐机科技2025</a>
 </footer>
+</body>
 </html>
