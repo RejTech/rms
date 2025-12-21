@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>RMS-Rej Comprehensive Site - Change Log</title>
+    <link rel="icon" href="../files/images/rms-logo-rotating.svg">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        .btn {
+            border-radius: 20px;
+        }
+        .navbar-toggler {
+            border-radius: 20px;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+                filter: blur(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+                filter: blur(0);
+            }
+        }
+        @keyframes spinIn {
+            from {
+                opacity: 0;
+                transform: rotate(-360deg) scale(0.5);
+                filter: blur(10px);
+            }
+            to {
+                opacity: 1;
+                transform: rotate(0deg) scale(1);
+                filter: blur(0);
+            }
+        }
+        @keyframes slowSpin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .nav-item {
+            opacity: 0;
+            animation: fadeInUp 0.5s ease forwards;
+        }
+        .nav-item:nth-child(1) { animation-delay: 0.1s; }
+        .nav-item:nth-child(2) { animation-delay: 0.2s; }
+        .nav-item:nth-child(3) { animation-delay: 0.3s; }
+        .nav-item:nth-child(4) { animation-delay: 0.4s; }
+        .nav-item:nth-child(5) { animation-delay: 0.5s; }
+        .nav-item:nth-child(6) { animation-delay: 0.6s; }
+        .nav-item:nth-child(7) { animation-delay: 0.7s; }
+        body > div {
+            opacity: 0;
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        body > div:nth-child(2) { animation-delay: 0.8s; }
+        .changelog-container {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 0.8s ease forwards 1s;
+        }
+        .changelog-content {
+            white-space: pre-wrap;
+            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        .back-button {
+            animation: fadeInUp 0.6s ease forwards 1.2s;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+        <a class='navbar-brand' href='/en/'><img alt="" height="25" src="../files/images/rms-logo.svg" width="25"/>Rej Comprehensive Site</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a aria-current='page' class='nav-link active' href='/en/'>Home</a></li>
+                <li class="nav-item"><a class='nav-link' href='/en/community'>Social Media</a></li>
+                <li class="nav-item"><a class='nav-link' href='/en/news/list'>Videos</a></li>
+                <li class="nav-item"><a class='nav-link' href='/en/live'>Live</a></li>
+                <li class="nav-item"><a class='nav-link' href='/en/about'>About RMS</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://rfs.rjtec.site">Rej File Station</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://rejclass.framer.website">Rej Class Site</a></li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class='btn btn-secondary' href='/changelog.html'>切换至中文</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h1 class="display-4 text-center mb-5">Change Log</h1>
+    <div class="changelog-container">
+        <div class="changelog-content">
+Date 2025.12.21
+Version 2025.12.21
+Version Number-β.25.1221.3
+
+### Version Note:
+- This update creates CHANGELOG reading pages and fixes homepage links
+
+### New Features:
+- Created CHANGELOG reading pages
+  - public/changelog.html (Chinese version)
+  - public/en/changelog.html (English version)
+  - Added animation effects to pages
+  - Display complete CHANGELOG content
+
+### Updates:
+- Updated update log button links on homepages
+  - public/index.html: Changed link from CHANGELOG file to changelog.html page
+  - public/en/index.html: Changed link from Bitbucket commits page to changelog.html page
+
+Date 2025.12.21
+Version 2025.12.21
+Version Number-β.25.1221.2
+
+### Version Note:
+- This update fixes garbled characters and link errors in English news pages
+
+### Fixes:
+- Fixed garbled characters in English news pages
+  - Removed Chinese garbled characters (such as: 銆, 鈽, 路, 鈥, etc.) from all pages
+  - Fixed titles and content in the following pages:
+    - public/en/news/list-tlz.html
+    - public/en/news/list-360reality.html
+    - public/en/news/list-ssdjy.html
+    - public/en/news/list.html
+    - public/en/news/wuhanguanggukonggui.html
+    - public/en/news/rctrs1pov.html
+    - public/en/news/360realityp1.html to 360realityp7.html
+    - public/en/news/ssdjyp4.html
+  - Replaced garbled separators with standard hyphens (-)
+
+- Fixed page link errors
+  - Fixed relative paths for LICENSE files
+  - Ensured all links point to the correct target files
+
+### Updates:
+- Updated website version information
+  - Updated version number from β.25.1221.1 to β.25.1221.2 in all pages
+  - Affected pages: All website pages
+
+Date 2025.1221.1
+Version 2025.12.21
+Version Number-β.25.1221.1
+
+### Version Note:
+- This update fixes HTML structure errors and updates version identifiers
+
+### Fixes:
+- Fixed HTML structure errors in all news pages
+  - Moved footer tags from outside <body> to inside <body> in all pages
+  - Ensured HTML structure complies with standard specifications
+  - Affected pages: All news pages and list pages
+
+### Updates:
+- Updated website version information
+  - Updated version number from α.25.1220.1 to β.25.1221.1 in all pages
+  - Affected pages: All website pages
+
+Date 2025.12.20
+Version 2025.12.20
+Version Number-α.25.1220.1
+
+### Version Note:
+- This update is a major version release
+
+### Fixes:
+- Fixed brand link navigation issue in Chinese list pages' title bar
+  - Updated brand links in the following pages:
+    - public/news/list.html
+    - public/news/list-tlz.html
+    - public/news/list-360reality.html
+    - public/news/list-ssdjy.html
+  - Corrected incorrect relative path href="index.html" to href="../index.html"
+
+### New Features:
+- Added animation effects to list pages
+  - Added combined fadeIn and blur animations
+  - Added sequential animations to navbar items
+  - Added staggered loading animations to list items
+  - Added animations to back buttons
+  - Affected pages: All list pages (list*.html)
+
+### UI Updates:
+- Added language switch buttons to list pages
+  - Added language switch functionality to:
+    - public/news/list.html
+    - public/news/list-tlz.html
+    - public/news/list-360reality.html
+    - public/news/list-ssdjy.html
+    - public/en/news/list.html
+    - public/en/news/list-tlz.html
+    - public/en/news/list-360reality.html
+    - public/en/news/list-ssdjy.html
+
+### Updates:
+- Updated website version information
+  - Updated version number and release date in Chinese about page (about.html)
+  - Updated version number and release date in English about page (en/about.html)
+  - Updated version number in footer of Chinese homepage (index.html)
+  - Updated version number in footer of English homepage (en/index.html)
+
+### Technical Details:
+- Version number follows α.25.1220.1 format:
+  - α: Alpha release version
+  - 25: Year (2025)
+  - 1220: Date (December 20th)
+  - 1: Version number of the day
+
+Date 2025.05.22
+Version 2025.05.22
+Version Number-r.250522.1
+
+### Updates:
+- Changed website hosting provider
+        </div>
+    </div>
+    <div class="text-center mt-5 back-button">
+        <a class="btn btn-primary" href="/en/">Back to Home</a>
+    </div>
+</div>
+
+<footer class="mt-5 py-3 bg-light text-center">
+    <a>Version-β.25.1221.3<br>Github Project</a>
+    <a href="https://github.com/RejTech/rejmainsite"><br>Go to Github Source Code</a><br>
+    <a href="../LICENSE">Apache2.0 License
+        ——Copyright RejTech 2025</a>
+</footer>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"b3ea2d47503648c48171ebfd73f02f36","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
