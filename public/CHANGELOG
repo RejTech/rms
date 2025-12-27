@@ -1,3 +1,58 @@
+日期2025.12.27
+Version 2025.12.27
+版本号-β.25.1227.1
+Version Number-β.25.1227.1
+
+### 版本说明 / Version Note:
+- 本次更新添加了LICENSE页面，标准化footer样式，增强页面视觉效果和用户体验
+  This update adds LICENSE page, standardizes footer styling, enhances visual effects and user experience
+
+### 新功能 / New Features:
+- 添加LICENSEView页面
+  Added LICENSEView page
+  - public/licenseview.html (中文版本)
+  - public/en/licenseview.html (英文版本)
+  - 包含详细的许可证权限表格说明
+    Include detailed license permission table explanation
+  - 保持与其他页面一致的风格和动画效果
+    Maintain consistent style and animation effects with other pages
+
+### 更新内容 / Updates:
+- 标准化footer样式
+  Standardized footer styling
+  - 为除视频详情页外的所有页面应用统一的footer样式
+    Applied unified footer styling to all pages except video detail pages
+  - 使用统一的Bootstrap类：mt-5 py-3 bg-light text-center
+    Used unified Bootstrap classes: mt-5 py-3 bg-light text-center
+
+- 版权年份更新
+  Copyright year update
+  - 将所有页面的版权年份从2025更新为2026
+    Updated copyright year from 2025 to 2026 on all pages
+
+- 图标增强
+  Icon enhancement
+  - 在主要页面的footer中添加DAE图标，匹配语言版本
+    Added DAE icons to footer of main pages with language matching
+    - 中文页面：DAEcn.png
+    - 英文页面：DAEen.png
+  - 添加MLS图标，与DAE图标处于同一行
+    Added MLS icons in the same row as DAE icons
+    - 中文页面：MLScn.png
+    - 英文页面：MLSen.png
+  - 使用Flexbox布局确保图标对齐
+    Used Flexbox layout to ensure icon alignment
+
+### 视觉增强 / Visual Enhancements:
+- 图标进入动画
+  Icon entrance animation
+  - 为DAE和MLS图标添加fadeInUp动画效果
+    Added fadeInUp animation effect for DAE and MLS icons
+  - DAE图标延迟1.2秒，MLS图标延迟1.4秒
+    DAE icon delay: 1.2s, MLS icon delay: 1.4s
+  - 动画持续时间0.6秒，创造流畅的视觉体验
+    Animation duration: 0.6s for smooth visual experience
+
 日期2025.12.21
 Version 2025.12.21
 版本号-β.25.1221.3

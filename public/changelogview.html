@@ -74,6 +74,17 @@
         .back-button {
             animation: fadeInUp 0.6s ease forwards 1.2s;
         }
+        /* 图标进入动画 */
+        .icon-container {
+            opacity: 0;
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        .icon-container:nth-child(1) {
+            animation-delay: 1.2s;
+        }
+        .icon-container:nth-child(2) {
+            animation-delay: 1.4s;
+        }
     </style>
 </head>
 <body>
@@ -106,179 +117,379 @@
     <h1 class="display-4 text-center mb-5">更新日志 (CHANGELOG)</h1>
     <div class="changelog-container">
         <div class="changelog-content">
-日期2025.12.21
-Version 2025.12.21
-版本号-β.25.1221.3
-Version Number-β.25.1221.3
+        <p><strong>日期：</strong>2025.12.27<br>
+        <strong>Version：</strong>2025.12.27<br>
+        <strong>版本号：</strong>β.25.1227.1<br>
+        <strong>Version Number：</strong>β.25.1227.1</p>
+        <div class="section">
+            <h3>版本说明 / Version Note:</h3>
+            <ul>
+                <li>本次更新添加了LICENSE页面，标准化footer样式，增强页面视觉效果和用户体验<br>
+                This update adds LICENSE page, standardizes footer styling, enhances visual effects and user experience</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>新功能 / New Features:</h3>
+            <ul>
+                <li>添加LICENSEView页面<br>
+                Added LICENSEView page
+                    <ul>
+                        <li>public/licenseview.html (中文版本)</li>
+                        <li>public/en/licenseview.html (英文版本)</li>
+                        <li>包含详细的许可证权限表格说明<br>
+                        Include detailed license permission table explanation</li>
+                        <li>保持与其他页面一致的风格和动画效果<br>
+                        Maintain consistent style and animation effects with other pages</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>更新内容 / Updates:</h3>
+            <ul>
+                <li>标准化footer样式<br>
+                Standardized footer styling
+                    <ul>
+                        <li>为除视频详情页外的所有页面应用统一的footer样式<br>
+                        Applied unified footer styling to all pages except video detail pages</li>
+                        <li>使用统一的Bootstrap类：mt-5 py-3 bg-light text-center<br>
+                        Used unified Bootstrap classes: mt-5 py-3 bg-light text-center</li>
+                    </ul>
+                </li>
+                <li>版权年份更新<br>
+                Copyright year update
+                    <ul>
+                        <li>将所有页面的版权年份从2025更新为2026<br>
+                        Updated copyright year from 2025 to 2026 on all pages</li>
+                    </ul>
+                </li>
+                <li>图标增强<br>
+                Icon enhancement
+                    <ul>
+                        <li>在主要页面的footer中添加DAE图标，匹配语言版本<br>
+                        Added DAE icons to footer of main pages with language matching
+                            <ul>
+                                <li>中文页面：DAEcn.png</li>
+                                <li>英文页面：DAEen.png</li>
+                            </ul>
+                        </li>
+                        <li>添加MLS图标，与DAE图标处于同一行<br>
+                        Added MLS icons in the same row as DAE icons
+                            <ul>
+                                <li>中文页面：MLScn.png</li>
+                                <li>英文页面：MLSen.png</li>
+                            </ul>
+                        </li>
+                        <li>使用Flexbox布局确保图标对齐<br>
+                        Used Flexbox layout to ensure icon alignment</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-### 版本说明 / Version Note:
-- 本次更新创建了CHANGELOG阅读页面并修复了主页链接
-  This update creates CHANGELOG reading pages and fixes homepage links
+        <div class="section">
+            <h3>视觉增强 / Visual Enhancements:</h3>
+            <ul>
+                <li>图标进入动画<br>
+                Icon entrance animation
+                    <ul>
+                        <li>为DAE和MLS图标添加fadeInUp动画效果<br>
+                        Added fadeInUp animation effect for DAE and MLS icons</li>
+                        <li>使用CSS动画延迟创建有序的进入效果<br>
+                        Used CSS animation delays to create sequential entrance effects</li>
+                    </ul>
+                </li>
+                <li>版本号格式标准化<br>
+                Version number format standardization
+                    <ul>
+                        <li>更新版本号格式使用空格替代连字符<br>
+                        Updated version number format to use spaces instead of hyphens</li>
+                        <li>统一应用到所有页面<br>
+                        Applied to all pages consistently</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-### 新功能 / New Features:
-- 创建了CHANGELOG阅读页面
-  Created CHANGELOG reading pages
-  - public/changelog.html (中文版本)
-  - public/en/changelog.html (英文版本)
-  - 为页面添加了动画效果
-    Added animation effects to pages
-  - 包含完整的CHANGELOG内容显示
-    Display complete CHANGELOG content
+        <div class="section">
+            <h3>技术改进 / Technical Improvements:</h3>
+            <ul>
+                <li>许可证链接更新<br>
+                License link updates
+                    <ul>
+                        <li>更新LICENSE链接指向交互式的licenseview.html页面<br>
+                        Updated LICENSE links to point to interactive licenseview.html page</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-### 更新内容 / Updates:
-- 更新了主页上的更新日志按钮链接
-  Updated update log button links on homepages
-  - public/index.html: 将链接从 CHANGELOG 文件改为 changelog.html 页面
-    Changed link from CHANGELOG file to changelog.html page
-  - public/en/index.html: 将链接从 Bitbucket 提交页面改为 changelog.html 页面
-    Changed link from Bitbucket commits page to changelog.html page
+        <hr>
+        <p><strong>日期：</strong>2025.12.21<br>
+        <strong>Version：</strong>2025.12.21<br>
+        <strong>版本号：</strong>β.25.1227.1<br>
+        <strong>Version Number：</strong>β.25.1227.1</p>
+        <div class="section">
+            <h3>版本说明 / Version Note:</h3>
+            <ul>
+                <li>本次更新创建了CHANGELOG阅读页面并修复了主页链接<br>
+                This update creates CHANGELOG reading pages and fixes homepage links</li>
+            </ul>
+        </div>
 
-日期2025.12.21
-Version 2025.12.21
-版本号-β.25.1221.2
-Version Number-β.25.1221.2
+        <div class="section">
+            <h3>新功能 / New Features:</h3>
+            <ul>
+                <li>创建CHANGELOG阅读页面<br>
+                Created CHANGELOG reading pages
+                    <ul>
+                        <li>public/changelogview.html (中文版本)</li>
+                        <li>public/en/changelogview.html (英文版本)</li>
+                        <li>为页面添加动画效果<br>
+                        Added animation effects to pages</li>
+                        <li>显示完整的CHANGELOG内容<br>
+                        Display complete CHANGELOG content</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-### 版本说明 / Version Note:
-- 本次更新修复了英文新闻页面中的乱码问题和链接错误
-  This update fixes garbled characters and link errors in English news pages
+        <div class="section">
+            <h3>更新内容 / Updates:</h3>
+            <ul>
+                <li>更新主页上的更新日志按钮链接<br>
+                Updated update log button links on homepages
+                    <ul>
+                        <li>public/index.html: 将链接从CHANGELOG文件改为changelogview.html页面<br>
+                        Changed link from CHANGELOG file to changelogview.html page</li>
+                        <li>public/en/index.html: 将链接从Bitbucket提交页面改为changelogview.html页面<br>
+                        Changed link from Bitbucket commits page to changelogview.html page</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <p><strong>日期：</strong>2025.12.21<br>
+        <strong>Version：</strong>2025.12.21<br>
+        <strong>版本号：</strong>β.25.1221.2<br>
+        <strong>Version Number：</strong>β.25.1221.2</p>
+        <div class="section">
+            <h3>版本说明 / Version Note:</h3>
+            <ul>
+                <li>本次更新修复了英文新闻页面的乱码和链接错误<br>
+                This update fixes garbled characters and link errors in English news pages</li>
+            </ul>
+        </div>
 
-### 修复内容 / Fixes:
-- 修复英文新闻页面中的乱码字符
-  Fixed garbled characters in English news pages
-  - 移除了所有页面中的中文乱码字符（如：銆、鈽、路、鈥等）
-    Removed Chinese garbled characters (such as: 銆, 鈽, 路, 鈥, etc.) from all pages
-  - 修复了以下页面的标题和内容：
-    Fixed titles and content in the following pages:
-    - public/en/news/list-tlz.html
-    - public/en/news/list-360reality.html
-    - public/en/news/list-ssdjy.html
-    - public/en/news/list.html
-    - public/en/news/wuhanguanggukonggui.html
-    - public/en/news/rctrs1pov.html
-    - public/en/news/360realityp1.html to 360realityp7.html
-    - public/en/news/ssdjyp4.html
-  - 将乱码分隔符替换为标准的连字符 (-)
-    Replaced garbled separators with standard hyphens (-)
+        <div class="section">
+            <h3>修复内容 / Bug Fixes:</h3>
+            <ul>
+                <li>修复英文新闻页面的乱码问题<br>
+                Fixed garbled characters in English news pages
+                    <ul>
+                        <li>修复新闻列表页面中的中文乱码显示<br>
+                        Fixed Chinese garbled character display in news list pages</li>
+                        <li>修复新闻详情页面中的乱码问题<br>
+                        Fixed garbled character issues in news detail pages</li>
+                    </ul>
+                </li>
+                <li>修复英文新闻页面的链接错误<br>
+                Fixed link errors in English news pages
+                    <ul>
+                        <li>修复新闻列表页面的链接路径<br>
+                        Fixed link paths in news list pages</li>
+                        <li>修复新闻详情页面的返回链接<br>
+                        Fixed return links in news detail pages</li>
+                    </ul>
+                </li>
+                <li>更新语言切换器路径<br>
+                Updated language switcher paths
+                    <ul>
+                        <li>修正英文页面中语言切换器的相对路径<br>
+                        Corrected relative paths for language switcher in English pages</li>
+                    </ul>
+                </li>
+                <li>修复英文日期格式<br>
+                Fixed English date formatting
+                    <ul>
+                        <li>将"Date 2025.1221.1"格式修改为"Date 2025.12.21"<br>
+                        Changed "Date 2025.1221.1" format to "Date 2025.12.21"</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <p><strong>日期：</strong>2025.12.21<br>
+        <strong>Version：</strong>2025.12.21<br>
+        <strong>版本号：</strong>β.25.1221.1<br>
+        <strong>Version Number：</strong>β.25.1221.1</p>
+        <div class="section">
+            <h3>版本说明 / Version Note:</h3>
+            <ul>
+                <li>本次更新标准化了网站语言和视觉元素<br>
+                This update standardizes website language and visual elements</li>
+            </ul>
+        </div>
 
-- 修复页面链接错误
-  Fixed page link errors
-  - 修复了LICENSE文件的相对路径
-    Fixed relative paths for LICENSE files
-  - 确保所有链接指向正确的目标文件
-    Ensured all links point to the correct target files
+        <div class="section">
+            <h3>语言标准化 / Language Standardization:</h3>
+            <ul>
+                <li>标准化语言切换器图标<br>
+                Standardized language switcher icons
+                    <ul>
+                        <li>统一使用zh.png和en.png图标<br>
+                        Unified use of zh.png and en.png icons</li>
+                        <li>确保图标在所有页面中的一致性<br>
+                        Ensured icon consistency across all pages</li>
+                    </ul>
+                </li>
+                <li>统一中英文页面结构<br>
+                Unified Chinese and English page structures
+                    <ul>
+                        <li>确保中英文版本的页面布局一致<br>
+                        Ensured consistent page layouts between Chinese and English versions</li>
+                        <li>统一导航菜单和链接结构<br>
+                        Unified navigation menu and link structures</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-### 更新内容 / Updates:
-- 更新网站版本号信息
-  Updated website version information
-  - 将所有页面的版本号从β.25.1221.1更新为β.25.1221.2
-    Updated version number from β.25.1221.1 to β.25.1221.2 in all pages
-  - 影响页面：所有网站页面
-    Affected pages: All website pages
+        <div class="section">
+            <h3>视觉改进 / Visual Improvements:</h3>
+            <ul>
+                <li>更新CSS动画<br>
+                Updated CSS animations
+                    <ul>
+                        <li>优化了fadeInUp动画效果<br>
+                        Optimized fadeInUp animation effects</li>
+                        <li>统一了动画时间间隔<br>
+                        Unified animation timing intervals</li>
+                    </ul>
+                </li>
+                <li>建立一致的版本号格式<br>
+                Established consistent version number format
+                    <ul>
+                        <li>创建了新的版本号格式规则<br>
+                        Created new version number format rules</li>
+                        <li>为未来版本建立标准化格式<br>
+                        Established standardized format for future versions</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <p><strong>日期：</strong>2025.12.20<br>
+        <strong>Version：</strong>2025.12.20<br>
+        <strong>版本号：</strong>α.25.1220.1<br>
+        <strong>Version Number：</strong>α.25.1220.1</p>
+        <div class="section">
+            <h3>版本说明 / Version Note:</h3>
+            <ul>
+                <li>本次更新改善了网站结构和用户界面<br>
+                This update improves website structure and user interface</li>
+            </ul>
+        </div>
 
-日期2025.1221.1
-Version 2025.12.21
-版本号-β.25.1221.1
-Version Number-β.25.1221.1
+        <div class="section">
+            <h3>网站结构改进 / Website Structure Improvements:</h3>
+            <ul>
+                <li>简化了主页布局<br>
+                Simplified homepage layout
+                    <ul>
+                        <li>移除了不必要的装饰元素<br>
+                        Removed unnecessary decorative elements</li>
+                        <li>优化了导航菜单结构<br>
+                        Optimized navigation menu structure</li>
+                    </ul>
+                </li>
+                <li>改进了关于页面<br>
+                Improved about page
+                    <ul>
+                        <li>更新了项目介绍内容<br>
+                        Updated project introduction content</li>
+                        <li>统一了页面样式<br>
+                        Unified page styling</li>
+                    </ul>
+                </li>
+                <li>优化了新闻页面样式<br>
+                Optimized news page styling
+                    <ul>
+                        <li>改进了列表页面的响应式布局<br>
+                        Improved responsive layout of list pages</li>
+                        <li>优化了详情页面的阅读体验<br>
+                        Optimized reading experience of detail pages</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-### 版本说明 / Version Note:
-- 本次更新修复了HTML结构错误并更新了版本标识
-  This update fixes HTML structure errors and updates version identifiers
+        <div class="section">
+            <h3>联系信息更新 / Contact Information Updates:</h3>
+            <ul>
+                <li>更新了联系邮箱地址<br>
+                Updated contact email address
+                    <ul>
+                        <li>新的联系邮箱：rej@outlook.com<br>
+                        New contact email: rej@outlook.com</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-### 修复内容 / Fixes:
-- 修复所有新闻页面的HTML结构错误
-  Fixed HTML structure errors in all news pages
-  - 将所有页面的footer标签从body外部移动到body内部
-    Moved footer tags from outside <body> to inside <body> in all pages
-  - 确保HTML结构符合标准规范
-    Ensured HTML structure complies with standard specifications
-  - 影响页面：所有新闻页面和列表页面
-    Affected pages: All news pages and list pages
+        <hr>
 
-### 更新内容 / Updates:
-- 更新网站版本号信息
-  Updated website version information
-  - 将所有页面的版本号从α.25.1220.1更新为β.25.1221.1
-    Updated version number from α.25.1220.1 to β.25.1221.1 in all pages
-  - 影响页面：所有网站页面
-    Affected pages: All website pages
+        <p><strong>日期：</strong>2025.05.22<br>
+        <strong>Version：</strong>2025.05.22<br>
+        <strong>版本号：</strong>r.250522.1<br>
+        <strong>Version Number：</strong>r.250522.1</p>
 
-日期2025.12.20
-Version 2025.12.20
-版本号-α.25.1220.1
-Version Number-α.25.1220.1
+        <div class="section">
+            <h3>版本说明 / Version Note:</h3>
+            <ul>
+                <li>本次更新是网站的全面重建<br>
+                This update is a comprehensive site rebuild</li>
+            </ul>
+        </div>
 
-### 版本说明 / Version Note:
-- 本次更新为大版本更新
-  This update is a major version release
+        <div class="section">
+            <h3>重大更新 / Major Updates:</h3>
+            <ul>
+                <li>完全重建网站<br>
+                Complete site rebuild
+                    <ul>
+                        <li>使用Bootstrap 5重新构建网站<br>
+                        Rebuilt website using Bootstrap 5</li>
+                        <li>引入了暗黑/明亮模式支持<br>
+                        Introduced dark/light mode support</li>
+                        <li>更新了logo设计<br>
+                        Updated logo design</li>
+                        <li>重构了新闻页面架构<br>
+                        Rebuilt news page architecture</li>
+                    </ul>
+                </li>
+                <li>更多详细信息请查看changelog页面<br>
+                More detailed information can be found on the changelog page</li>
+            </ul>
+        </div>
 
-### 修复内容 / Fixes:
-- 修复中文列表页面标题栏品牌链接跳转问题
-  Fixed brand link navigation issue in Chinese list pages' title bar
-  - 更新了以下页面的品牌链接：
-    Updated brand links in the following pages:
-    - public/news/list.html
-    - public/news/list-tlz.html
-    - public/news/list-360reality.html
-    - public/news/list-ssdjy.html
-  - 将错误的相对路径 href="index.html" 修正为 href="../index.html"
-    Corrected incorrect relative path href="index.html" to href="../index.html"
+        <hr>
 
-### 新功能 / New Features:
-- 为列表页面添加动画效果
-  Added animation effects to list pages
-  - 添加了 fadeIn 和模糊效果的组合动画
-    Added combined fadeIn and blur animations
-  - 为导航栏项目添加了序列动画
-    Added sequential animations to navbar items
-  - 为列表项添加了延迟加载动画
-    Added staggered loading animations to list items
-  - 为返回按钮添加了动画效果
-    Added animations to back buttons
-  - 影响页面：所有列表页面 (list*.html)
-    Affected pages: All list pages (list*.html)
+        <div class="project-info">
+            <h3>项目信息 / Project Information:</h3>
+            <ul>
+                <li><strong>项目主页：</strong>RMS-Rej<br>
+                <strong>Project Homepage：</strong>RMS-Rej</li>
+                <li><strong>开发资源：</strong>Github项目<br>
+                <strong>Development Resources：</strong>Github Project</li>
+                <li><strong>版本历史：</strong>使用CHANGELOG文件跟踪版本历史<br>
+                <strong>Version History：</strong>Version history tracked using CHANGELOG file</li>
+            </ul>
+        </div>
 
-### 界面更新 / UI Updates:
-- 为列表页面添加语言切换按钮
-  Added language switch buttons to list pages
-  - 在以下页面添加了语言切换功能：
-    Added language switch functionality to:
-    - public/news/list.html
-    - public/news/list-tlz.html
-    - public/news/list-360reality.html
-    - public/news/list-ssdjy.html
-    - public/en/news/list.html
-    - public/en/news/list-tlz.html
-    - public/en/news/list-360reality.html
-    - public/en/news/list-ssdjy.html
-
-### 更新内容 / Updates:
-- 更新网站版本号信息
-  Updated website version information
-  - 更新了中文关于页面 (about.html) 中的版本号和发布日期
-    Updated version number and release date in Chinese about page (about.html)
-  - 更新了英文关于页面 (en/about.html) 中的版本号和发布日期
-    Updated version number and release date in English about page (en/about.html)
-  - 更新了中文首页 (index.html) 底部的版本号
-    Updated version number in footer of Chinese homepage (index.html)
-  - 更新了英文首页 (en/index.html) 底部的版本号
-    Updated version number in footer of English homepage (en/index.html)
-
-### 技术细节 / Technical Details:
-- 版本号遵循 α.25.1220.1 格式：
-  Version number follows γ1.25.1220.1 format:
-  - α: 测试版本 / Alpha release version
-  - 25: 年份 (2025) / Year (2025)
-  - 1220: 日期 (12月20日) / Date (December 20th)
-  - 1: 当天的版数 / Version number of the day
-
-日期2025.05.22
-Version 2025.05.22
-版本号-r.250522.1
-Version Number-r.250522.1
-
-### 更新内容 / Updates:
-- 网站托管服务商更改
-  Changed website hosting provider
+        <p style="text-align: center; margin-top: 30px; color: #6c757d;">
+            <strong>版本号 β.25.1227.1<br>Github项目</strong>
+        </p>
         </div>
     </div>
     <div class="text-center mt-5 back-button">
@@ -287,10 +498,14 @@ Version Number-r.250522.1
 </div>
 
 <footer class="mt-5 py-3 bg-light text-center">
-    <a>版本号-β.25.1221.3<br>Github项目</a>
-    <a href="https://github.com/RejTech/rejmainsite"><br>前往Github源码区</a><br>
-    <a href="LICENSE">Apache2.0许可证
-        ——版权所有 锐机科技2025</a>
+    <a>版本号-β.25.1227.1<br>Github项目</a>
+     <a href="https://github.com/RejTech/rejmainsite"><br>前往Github源码区</a><br>
+     <div style="display: flex; justify-content: center; gap: 20px; margin: 8px 0;">
+        <img src="files/images/DAEcn.png" alt="DAE" style="height: 24px;" class="icon-container">
+        <img src="files/images/MLScn.png" alt="MLS" style="height: 24px;" class="icon-container">
+    </div>
+     <a href="licenseview.html">Apache2.0许可证
+        ——版权所有 锐机科技2026</a>
 </footer>
 
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"b3ea2d47503648c48171ebfd73f02f36","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
